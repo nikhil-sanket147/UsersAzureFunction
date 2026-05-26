@@ -58,7 +58,12 @@ public class UserFunction
     {
         var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
-        var user = JsonSerializer.Deserialize<UsersModel>(requestBody);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        var user = JsonSerializer.Deserialize<UsersModel>(requestBody, options);
 
         var createdUser = await _userService.CreateUserAsync(user!);
 
@@ -77,7 +82,12 @@ public class UserFunction
     {
         var requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
-        var updatedUser = JsonSerializer.Deserialize<UsersModel>(requestBody);
+        var options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
+
+        var updatedUser = JsonSerializer.Deserialize<UsersModel>(requestBody, options);
 
         var result = await _userService.UpdateUserAsync(id, updatedUser!);
 

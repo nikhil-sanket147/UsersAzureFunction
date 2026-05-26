@@ -1,0 +1,31 @@
+GET http://localhost:7222/api/users
+
+###
+
+POST http://localhost:7222/api/users
+Content-Type: application/json
+
+{
+  "name": "Snowman",
+  "email": "snowman@gmail.com",
+  "age": 25
+}
+
+###
+
+GET http://localhost:7222/api/users/1
+
+###
+
+PUT http://localhost:7222/api/users/1
+Content-Type: application/json
+
+{
+  "name": "Updated Snowman",
+  "email": "updated@gmail.com",
+  "age": 30
+}
+
+###
+
+DELETE http://localhost:7222/api/users/1

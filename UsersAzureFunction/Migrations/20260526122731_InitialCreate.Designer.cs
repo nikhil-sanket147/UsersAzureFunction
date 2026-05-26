@@ -10,7 +10,7 @@ using UsersAzureFunction.Data;
 namespace UsersAzureFunction.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260526105249_InitialCreate")]
+    [Migration("20260526122731_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
