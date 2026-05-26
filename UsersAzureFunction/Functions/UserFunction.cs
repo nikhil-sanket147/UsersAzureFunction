@@ -4,7 +4,6 @@ using System.Net;
 using System.Text.Json;
 using UsersAzureFunction.Models;
 using UsersAzureFunction.Services;
-using static Microsoft.ApplicationInsights.MetricDimensionNames.TelemetryContext;
 
 namespace UsersAzureFunction.Functions;
 

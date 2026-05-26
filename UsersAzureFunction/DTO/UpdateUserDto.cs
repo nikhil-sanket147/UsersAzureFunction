@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UsersAzureFunction.DTO
+namespace UsersAzureFunction.DTO;
 
 public class UpdateUserDto
 {
